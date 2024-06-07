@@ -1,0 +1,25 @@
+{
+  "name": "@myrepo/root",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "dependencies": {
+    "@myrepo/web-app": "1.0.0",
+    "@myrepo/node-app": "1.0.0"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "main_build": "tsc",
+    "main_clean": "rm -rf node_modules dist",
+    "run": "node dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

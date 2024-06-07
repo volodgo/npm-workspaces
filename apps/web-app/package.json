@@ -1,0 +1,14 @@
+{
+  "name": "@myrepo/web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main",
+  "types": "dist/main",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
